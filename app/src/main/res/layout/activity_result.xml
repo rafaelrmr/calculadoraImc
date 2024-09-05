@@ -10,23 +10,24 @@
 
     <TextView
         android:id="@+id/tv_result"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="35sp"
+        android:textSize="52sp"
         android:textStyle="bold"
+        android:maxLength="5"
         tools:text="23.66" />
 
     <TextView
         android:id="@+id/tv_classificacao_label"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="A classificacao do seu imc é:" />
 
     <TextView
         android:id="@+id/tv_classificacao"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textStyle="bold"

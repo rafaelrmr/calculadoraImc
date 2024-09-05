@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.widget.Button
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
-
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,7 +47,9 @@ class MainActivity : AppCompatActivity() {
                 //Intent - Classe do proprio android
 
                 val intent = Intent(this,ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_IMC, resultado)
                 startActivity(intent)
+
                 println("Seu IMC é: " + resultado)
             }
         }
