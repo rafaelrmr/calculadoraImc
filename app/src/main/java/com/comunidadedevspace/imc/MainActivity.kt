@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
+
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         val btnCalcular = findViewById<Button>(R.id.btn_calcular)
 
         btnCalcular.setOnClickListener {
-
 
             val pesoStr: String = edtPeso.text.toString()
             val alturaStr: String = edtAltura.text.toString()
@@ -40,17 +40,15 @@ class MainActivity : AppCompatActivity() {
                 val alturaQ2 = altura * altura
                 val resultado = peso / alturaQ2
 
-                //Navegar para proxima tela
-                //Criar o layout da proxima tela
-                //Passar dados(resultado) para proxima tela
-
-                //Intent - Classe do proprio android
-
                 val intent = Intent(this,ResultActivity::class.java)
                 intent.putExtra(KEY_RESULT_IMC, resultado)
                 startActivity(intent)
 
-                println("Seu IMC é: " + resultado)
+
+                //Gradiente + icone + titulo + descricao
+
+
+
             }
         }
     }
