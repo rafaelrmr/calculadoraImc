@@ -29,17 +29,6 @@ class ResultActivity : AppCompatActivity() {
             else -> "Obesidade 2" to R.color.Red
         }
 
-        //val (classificacao: String, Color) = if(result <= 18.5f)
-        //    "Magreza"
-        //else if(result > 18.5f && result <= 24.9f){
-        //    "Normal"
-        //}else if(result > 24.9f && result <= 29.9f){
-        //    "Sobrepeso"
-        //}else if(result > 29.9f && result <= 39.9f){
-        //    "Obesidade"
-        //}else {
-        //   "Obesidade Grave"
-        //}
         tvClassificacao.text = classificacao
         tvClassificacao.setTextColor(ContextCompat.getColor(this,color))
     }
